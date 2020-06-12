@@ -17,7 +17,7 @@ import Blog from './components/Blog';
       return (
         <div>
         <Router>
-        <div className="navbar">
+        <Navbar>
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
              <div className="container">
                   <Link className="navbar-brand" to={"/"}>BuyBAY</Link>
@@ -48,7 +48,7 @@ import Blog from './components/Blog';
             </div>
             </div>
            </nav>
-           </div>
+           </Navbar>
            <Switch>
                  <Route exact path='/' component={Home}/>
                 <Route path='/sign-up' component={Register}/>
