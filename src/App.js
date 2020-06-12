@@ -17,38 +17,22 @@ import Blog from './components/Blog';
       return (
         <div>
         <Router>
-        <Navbar>
-        <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-             <div className="container">
-                  <Link className="navbar-brand" to={"/"}>BuyBAY</Link>
-              <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-                  <ul className="navbar-nav ml-auto">
-                     <li className="nav-item">
-                  <Form inline>
-                     <FormControl type="text" placeholder="Search Here" className="mr-sm-2" />
-                      <Button variant="outline-info">Search</Button>
-                   </Form>
-                      </li>
-                      <li className="nav-item">
-                          <Link className="nav-link" to={"/sign-in"}>Login</Link>
-                        </li>
-                      <li className="nav-item">
-                       <Link className="nav-link" to={"/sign-up"}>Sign up</Link>
-                      </li>
-                      <li className="nav-item">
-                         <Link className="nav-link" to={"/roommate"}>Find Your Roommate</Link>
-                       </li>
-                      <li className="nav-item">
-                        <Link className="nav-link" to={"/viewproperties"}>View Properties</Link>
-                       </li>
-                       <li className="nav-item">
-                        <Link className="nav-link" to={"/blog"}>Blog</Link>
-                       </li>
-                    </ul>
-            </div>
-            </div>
-           </nav>
-           </Navbar>
+         <Navbar collapseOnSelect expand="lg">
+          <Navbar.Brand href="/">BuyBAY</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto">
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/viewproperties">View Properties</Nav.Link>
+              <Nav.Link href="/roommate">Find Your Roommate</Nav.Link>
+              <Nav.Link href="/blog">Blog</Nav.Link>
+            </Nav>
+            <Nav>
+              <Nav.Link href="/sign-up">Sign up</Nav.Link>
+              <Nav.Link href="/sign-in">Login</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
            <Switch>
                  <Route exact path='/' component={Home}/>
                 <Route path='/sign-up' component={Register}/>
