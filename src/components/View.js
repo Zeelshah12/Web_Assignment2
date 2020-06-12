@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import {Card,CardDeck, Button} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import logo from './logo.png';
+import image1 from './image1.jpg';
+import image3 from './image3.jpg';
+import image4 from './image4.jpg';
+import image2 from './image2.jpg';
+import image5 from './image5.jpg';
+import image6 from './image6.jpg';
  
 export default class View extends Component {
     render() {
@@ -22,7 +28,7 @@ export default class View extends Component {
        </Card>
        
        <Card>
-            <Card.Img variant="top" src={logo} />
+            <Card.Img variant="top" src={image4} />
             <Card.Body>
             <Card.Title>Example Property 2</Card.Title>
             <Card.Text>
@@ -34,7 +40,7 @@ export default class View extends Component {
             </Card.Body>
        </Card>
        <Card>
-            <Card.Img variant="top" src={logo} />
+            <Card.Img variant="top" src={image3} />
             <Card.Body>
             <Card.Title>Example Property 3</Card.Title>
             <Card.Text>
@@ -50,7 +56,7 @@ export default class View extends Component {
     <br />
   <CardDeck>
         <Card>
-            <Card.Img variant="top" src={logo} />
+            <Card.Img variant="top" src={image1} />
             <Card.Body>
             <Card.Title>Example Property 4</Card.Title>
             <Card.Text>
@@ -62,7 +68,7 @@ export default class View extends Component {
             </Card.Body>
        </Card>
        <Card>
-            <Card.Img variant="top" src={logo} />
+            <Card.Img variant="top" src={image5} />
             <Card.Body>
             <Card.Title>Example Property 5</Card.Title>
             <Card.Text>
