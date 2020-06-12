@@ -6,9 +6,9 @@ import logo from './logo.png';
 export default class View extends Component {
     render() {
         return (
-        <div className="CardView mt-5 ml-5 mr-5">
+        <div>
         <CardDeck>
-        <Card style={{width: '10rem'}}>
+        <Card>
             <Card.Img variant="top" src={logo} />
             <Card.Body>
             <Card.Title>Example Property 1</Card.Title>
@@ -21,7 +21,7 @@ export default class View extends Component {
             </Card.Body>
        </Card>
        
-       <Card style={{width: '10rem'}}>
+       <Card>
             <Card.Img variant="top" src={logo} />
             <Card.Body>
             <Card.Title>Example Property 2</Card.Title>
@@ -33,7 +33,7 @@ export default class View extends Component {
              <Card.Link href="/Products">View Property Details</Card.Link>
             </Card.Body>
        </Card>
-       <Card style={{width: '10rem'}}>
+       <Card>
             <Card.Img variant="top" src={logo} />
             <Card.Body>
             <Card.Title>Example Property 3</Card.Title>
@@ -49,7 +49,7 @@ export default class View extends Component {
   
     <br />
   <CardDeck>
-        <Card style={{width: '10rem'}}>
+        <Card>
             <Card.Img variant="top" src={logo} />
             <Card.Body>
             <Card.Title>Example Property 4</Card.Title>
@@ -61,7 +61,7 @@ export default class View extends Component {
              <Card.Link href="/Products">View Property Details</Card.Link>
             </Card.Body>
        </Card>
-       <Card style={{width: '10rem'}}>
+       <Card>
             <Card.Img variant="top" src={logo} />
             <Card.Body>
             <Card.Title>Example Property 5</Card.Title>
@@ -73,7 +73,7 @@ export default class View extends Component {
              <Card.Link href="/Products">View Property Details</Card.Link>
             </Card.Body>
        </Card>
-       <Card style={{width: '10rem'}}>
+       <Card>
             <Card.Img variant="top" src={logo} />
             <Card.Body>
             <Card.Title>Example Property 6</Card.Title>
