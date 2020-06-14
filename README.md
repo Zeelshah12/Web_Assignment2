@@ -1,6 +1,7 @@
 # Assignment_2 - BuyBAY
 
 Application URL: https://csci5709-a2-shah-zeel.herokuapp.com/ <br/>
+GitHub URL: https://github.com/Zeelshah12/Web_Assignment2 <br/>
 Developed Home page(Landing Page), Sign Up Page, View Properties Page and Blog. "BuyBAY" link will redirect to Home Page.<br/> 
 On click of "Register" -> Sign Up form<br/>
 On click of "View Properties" -> User can check all the listed properties<br/>
