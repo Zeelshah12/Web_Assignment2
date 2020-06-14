@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Register.css";
+import {Redirect} from 'react-router-dom';
 
 const emailRegex = RegExp(
   /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
@@ -30,6 +31,7 @@ export default class Register extends Component {
       lastName: null,
       email: null,
       password: null,
+      redirecthome : false,
       formErrors: {
         firstName: "",
         lastName: "",
@@ -44,7 +46,9 @@ export default class Register extends Component {
      
 
     if (formValid(this.state)) {
+      
       alert("Successful Registeration, Development is in Progress!")
+      this.setState({redirecthome:true});
       console.log(`
         --SUBMITTING--
         First Name: ${this.state.firstName}
@@ -88,7 +92,10 @@ export default class Register extends Component {
   };
 
   render() {
-    const { formErrors } = this.state;
+    const { formErrors, redirecthome } = this.state;
+      if (redirecthome === true) {
+           return <Redirect to='/Products' />
+      }
 
     return (
       <div className="wrapper">
